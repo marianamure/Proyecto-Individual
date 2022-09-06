@@ -1,0 +1,29 @@
+* {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+.container{
+    font-family: 'Lexend', sans-serif;
+    background-color: rgb(94, 214, 104);
+    color: white;
+    text-align: center;
+    border-radius: 1%;
+    border: 2px solid black;    
+}
+h2{
+    text-shadow: 0.1em 0.1em 0.2em black;
+
+}
+label{
+    text-shadow: 0.1em 0.1em 0.2em black;
+
+}
+.row{
+    display:flex;
+}
+.col-5{
+    background-color: rgb(94, 214, 104);
+    color: white;
+    text-align: justify;
+    padding:20px;
+}

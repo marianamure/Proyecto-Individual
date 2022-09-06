@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+</head>
+<body>
+    <header>
+        <nav class="d-flex justify-content-between align-items-center">
+            {% with messages = get_flashed_messages(category_filter=['login']) %}
+                {% if messages %}
+                    <div class="alert alert-danger">
+                        {% for message in messages %}
+                            <p>{{message}}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+            <form action="/login" method="post">
+                
+                    <label for="email2" class="email"><b>E-mail:</b></label>
+                    <input type="text" id="email2" name="email" >
+
+                    <label for="password2" class="email"><b>Contraseña:</b></label>
+                    <input type="password" id="password2" name="password">
+
+                <input type="submit" value="Iniciar Sesión" class="btn btn-warning m-4">
+            </form>
+        </nav>
+    </header>
+    <main>
+        <div class="main-top" id="logo">
+            <img src="../static/images/cannapp1.png" alt="cannapp_logo" />
+        </div>
+        <div class="main-middle">
+            <div class="left-middle">
+                <br>
+                <h5>Bienvenido al grupo colaborativo de agricultores de cannabis, aqui podras 
+                    encontrar una comunidad para intercambiar ideas y consejos, ademas de poder
+                    almacenar la información de tus cultivos para compararla en el tiempo y 
+                    generar analisis que te serviran para tomar desiciones de tu cultivo
+                    a futuro.
+                </h5>
+                <br>
+                <a href="/registrarme" class="btn btn-light">Registrarme</a> 
+            </div>
+            <div class="right-middle">
+                    <img id="chg" onmouseover="change()" onmouseout="change2()" src="../static/images/seed16.jpg" alt="seed" />
+            </div>
+        </div>
+    </main>
+    <script src="../static/js/app.js" ></script>
+</body>
+</html>

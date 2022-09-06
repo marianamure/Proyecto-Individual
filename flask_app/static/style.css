@@ -1,0 +1,58 @@
+/*Index.html*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*1 {
+    color: green;
+    background-color: black;
+    text-align: center;
+    font-style: bold;
+    font-family: 'Lexend', sans-serif;
+}
+#registro {
+    background-color: white;
+    border: 3px solid black;
+    margin: 0 auto; /*Generando margen automático y centrando
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Lexend', sans-serif;
+}
+#sesion {
+    background-color: white;
+    border: 3px solid black;
+    margin: 0 auto; /*Generando margen automático y centrando
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Lexend', sans-serif;
+}
+/*h4 {
+    color: green;
+    background-color: black;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+    background-color: black;
+    text-align: center;
+}
+
+
+
+/*registro.html
+#container{
+background-color: white;
+border: 3px solid black;
+margin: 0 auto; /*Generando margen automático y centrando*/
+/*border-radius: 5px;
+margin-top: 20px;
+font-family: 'Lexend', sans-serif;
+}*/
+
+.img{
+    width: 100px;
+    height: 100px;
+}

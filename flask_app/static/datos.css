@@ -1,0 +1,29 @@
+* {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+#database {
+    margin-top: 5px;
+    background-image: url("../static/images/marihuana3.webp");
+    background-position: center;
+    background-size:auto;
+    padding: 10px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 2%;
+    color:white;
+}
+form{
+    margin: 10px;
+}
+.button{
+    align-items: flex-end;
+    padding: 20px;
+    padding-left: 400px;
+}
+label{
+    text-shadow: 0.1em 0.1em 0.2em black;
+
+}
+
